@@ -1,0 +1,92 @@
+@import "../../app.scss";
+
+.navbar{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px 30px 40px;
+    font-size: larger;
+    position: fixed;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(10px);
+
+    @include mobile{
+        z-index: 999;
+    }
+
+    .logo{
+        margin-top: 5px;
+        height: 80px;
+        cursor: pointer;
+
+        @include mobile{
+            display: none;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            z-index: 999;
+            transition: all ease-out .1s;
+            
+            &:hover{
+                // background: $HTextColor;
+                transform: scale(1.05);
+            }
+        }
+    }
+
+    .links{
+        display: flex;
+        gap: 80px;
+
+        @include mobile{
+            display: none;
+        }
+
+        .one{
+
+            ul{
+                gap: 30px;
+                display: flex;
+
+                li{
+
+                    .active{
+                        color: $HTextColor;
+                        transition: all ease-out .5s;
+                    }
+                    
+                    &:hover{
+                        color: $HTextColor;
+                    }
+                }
+            }
+        }
+        .two{
+
+            ul{
+                gap: 30px;
+                display: flex;
+
+                li{
+                    
+                    &:hover{
+                        color: $HTextColor;
+                    }
+                    
+                    .crt{
+                        background: $HTextColor;
+                        color: #fff;
+                        border-radius: 5px;
+                        text-align: center;
+                        padding: 10px 30px;
+                    }
+                }
+            }
+        }
+    }
+}

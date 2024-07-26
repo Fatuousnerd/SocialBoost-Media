@@ -1,0 +1,74 @@
+@import "../../../global.scss";
+@import "../../../app.scss";
+
+.popup{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(20px);
+    margin: 0;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    .close{
+        right: 0;
+        position: relative;
+        margin-left: 650px;
+
+        button{
+            background: transparent;
+            box-shadow: none;
+            border: none;
+            outline: none;
+        }
+    }
+
+    .modal{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 700px;
+        min-height: 300px;
+        max-height: 500px;
+        border-radius: 10px;
+        padding: 10px 20px;
+        overflow-y: scroll;
+        background: $HTextColor;
+
+        .text{
+            background: rgba(255, 255, 255, .2);
+            padding: 5px 10px;
+            border-radius: 5px;
+            
+            p{
+                text-align: left;
+                color: $SecTextColor;
+            }
+        }
+    }
+
+}
+@include mobile{
+    .popup{
+        max-width: 100vw;
+        padding: 0 10px;
+        // background: red;
+
+        .close{
+            margin-left: 280px;
+        }
+
+        .modal{
+            width: 300px;
+
+            h2{
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,0 +1,46 @@
+@import "../../global.scss";
+@import "../../app.scss";
+
+.scrollUp{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    bottom: 0;
+    right: 0;
+    margin-right: 50px;
+    margin-bottom: 90px;
+    padding: 15px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: $HTextColor;
+    cursor: pointer;
+    transition: all ease-in-out .25s;
+
+    @include mobile{
+      padding: 5px;
+      margin-bottom: 10px;
+      margin-right: 20px;
+    }
+
+    button{
+        background: transparent;
+        border: none;
+        outline: none;
+        box-shadow: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        rotate: 90deg;
+    }
+
+    &.show {
+        display: flex;
+      }
+    
+    &:hover {
+      transform: scale(1.25);
+      opacity: 0.9;
+    }
+}

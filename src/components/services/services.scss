@@ -1,0 +1,181 @@
+@import "../../global.scss";
+@import "../../app.scss";
+
+.services{
+    max-width: 100vw;
+    height: calc(100vh - 70px);
+    top: 70px;
+    position: relative;
+    padding: 20px 10px;
+
+    @include mobile{
+        overflow: hidden;
+    }
+
+    .top{
+        text-align: center;
+        align-items: center;
+        display: grid;
+        padding: 5px 20px;
+
+        @include mobile{
+            padding: 5px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            // background: red;
+        }
+
+        .title{
+            font-size: 1.25rem;
+
+            @include mobile{
+                font-size: 1rem;
+            }
+            
+            h2{
+                color: $HTextColor;
+            }
+        }
+
+        .cardWrapper{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px 30px;
+            margin: 60px 20px;
+            flex-wrap: wrap;
+            gap: 50px;
+
+            @include mobile{
+                margin: auto 0;
+                gap: 10px;
+                padding: 0 10px;
+                height: 450px;
+                background: green;
+            }
+            
+            .card{
+                text-align: left;
+                border-radius: 10px;
+                padding: 15px;
+                width: 450px;
+                height: 600px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                backdrop-filter: blur(20x);
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+                @include mobile{
+                    width: 100%;
+                    font-size: 1rem;
+                    padding: 0;
+                    max-height: 100px;
+                    flex-direction: row;
+                    justify-content: center;
+                    background: red;
+                }
+
+                .imageCarry{
+                    border-radius: 5px;
+                    margin-bottom: 20px;
+                    min-height: 300px;
+
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        // background: cyan;
+                    }
+
+                    @include mobile{
+                        // display: none;
+                        min-height: 0;
+                        height: 100%;
+                        width: auto;
+                        margin-bottom: 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        left: 0;
+
+                        img{
+                            width: 100%;
+                            height: 50%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+
+                .main{
+                    display: flex;
+                    gap: 30px;
+                    font-size: 1.25rem;
+                    align-items: center;
+                    margin-bottom: 20px;
+
+                    .icon{
+                        padding: 10px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: $ContrastTextColor;
+                        background: $HTextColor;
+                    }
+                    @include mobile{
+                        gap: 0;
+                        font-size: .5rem;
+                        margin-bottom: 0;
+                        .icon{
+                            padding: 0;
+                        }
+                    }
+                }
+
+
+                p{
+                    margin: 20px 0;
+
+                    @include mobile{
+                        margin: 0;
+                    }
+                }
+
+                a{
+                    align-items: center;
+                    display: flex;
+                    color: $HTextColor;
+                    font-weight: 700;
+                    transition: all .5s ease-in;
+
+                    &:hover{
+                        font-weight: 300;
+                        color: $SecTextColor;
+                    }
+
+                    @include mobile{
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .sliders{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+
+            .slider{
+                background: #ccc;
+                width: 15px;
+                height: 15px;
+                border-radius: 50%;
+                margin: auto 0;
+            }
+        }
+    }
+}

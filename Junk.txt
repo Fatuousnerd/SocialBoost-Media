@@ -1,0 +1,137 @@
+https://www.pexels.com/photo/a-train-is-traveling-down-a-track-next-to-a-road-26508609/
+https://www.pexels.com/photo/lake-1105389/
+https://www.pexels.com/photo/photo-of-road-in-the-middle-of-foggy-field-1165991/
+https://www.pexels.com/photo/lake-and-mountain-417074/
+
+<div className="bottom">
+            <div className="textHolder">
+                <h3>Explore Programs</h3>
+                <h1>Our Most Popular Class</h1>
+                <p>Let's join our famous class, the knowledge provided will definitely be useful for you.</p>
+            </div>
+
+            <div className="listBox">
+                <div className="container">
+                    <div className="img">
+                        <img src="" alt="" />
+                        <div className="detail">
+                            <Timelapse/>
+                        </div>
+                    </div>
+
+                    <div className="txt">
+                        <h6>Design</h6>
+                        <h2></h2>
+                        
+                        <p></p>
+
+                        <div className="review">
+                            4.3 
+                            <StarBorder/>
+                            <StarBorder/>
+                            <StarBorder/>
+                            <StarHalf />
+                        </div>
+
+                    </div>
+
+                    <div className="info">
+                        <img src="" alt="" />
+                        <div className="more">
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <h5>$</h5>
+                    </div>
+
+                </div>
+               
+                <div className="container">
+                    <div className="img">
+                        <img src="" alt="" />
+                        <div className="detail">
+                            <Timelapse/>
+                        </div>
+                    </div>
+
+                    <div className="txt">
+                        <h6>Design</h6>
+                        <h2></h2>
+                        
+                        <p></p>
+
+                        <div className="review">
+                            4.3 
+                            <StarBorder/>
+                            <StarBorder/>
+                            <StarBorder/>
+                            <StarHalf />
+                        </div>
+
+                    </div>
+
+                    <div className="info">
+                        <img src="" alt="" />
+                        <div className="more">
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <h5>$</h5>
+                    </div>
+
+                </div>
+                
+                <div className="container">
+                    <div className="img">
+                        <img src="" alt="" />
+                        <div className="detail">
+                            <Timelapse/>
+                        </div>
+                    </div>
+
+                    <div className="txt">
+                        <h6>Design</h6>
+                        <h2></h2>
+                        
+                        <p></p>
+
+                        <div className="review">
+                            4.3 
+                            <StarBorder/>
+                            <StarBorder/>
+                            <StarBorder/>
+                            <StarHalf />
+                        </div>
+
+                    </div>
+
+                    <div className="info">
+                        <img src="" alt="" />
+                        <div className="more">
+                            <p></p>
+                            <p></p>
+                        </div>
+
+                        <h5>$</h5>
+                    </div>
+
+                </div>
+
+                <div className="slds">
+                    <div className="sl"></div>
+                    <div className="sl"></div>
+                    <div className="sl"></div>
+                </div>
+
+                <a href="">
+                    <button>Explore All Programs</button>
+                </a>
+
+            </div>
+        </div>
+
+
+
+viewport={{ once: true, amount: 0.8 }}
