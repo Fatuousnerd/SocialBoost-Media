@@ -12,11 +12,13 @@
     overflow: hidden;
 
     .island{
+        // background: goldenrod;
         width: 75%;
         height: 85%;
         margin: auto 0;
-        padding: 15px;
+        // padding: 15px;
         align-items: center;
+        justify-content: center;
         text-align: center;
         border-radius: 5px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -34,7 +36,7 @@
             }
 
             h1{
-                color: $HTextColor;
+                color: var(--HTextColor);
                 line-height: 1.5rem;
                 text-decoration: underline;
                 text-transform: uppercase;
@@ -43,9 +45,11 @@
 
         .hold{
             margin-top: 10px;
-            margin-left: 300px;
-            padding: 30px;
+            // margin-left: 300px;
+            padding: 10px;
             display: flex;
+            justify-content: center;
+            // background: gray;
 
             @include mobile{
                 margin-left: 0;
@@ -55,11 +59,13 @@
 
             .form{
                 margin: auto 0;
-                padding: 30px;
                 text-align: left;
                 display: flex;
+                justify-content: center;
+                align-items: center;
                 flex-direction: column;
-                gap: 20px;
+                gap: 10px;
+                // background: red;
 
                 @include mobile{
                     padding: 10px 10px;
@@ -68,33 +74,37 @@
                 
                 input{
                     width: 100%;
-                    margin-bottom: 20px;
-                    padding: 10px 5px;
+                    margin-bottom: 10px;
+                    padding: 7.5px 5px;
                     background: transparent;
                     border-radius: 5px;
                     border: 1px solid #404040;
                     outline: none;
+                    color: var(--MainTextColor);
                 }
                 
                 textarea{
                     width: 100%;
-                    height: 150px;
+                    // height: 150px;
                     margin-bottom: 20px;
                     background: transparent;
                     padding: 10px 5px;
                     border-radius: 5px;
                     border: 1px solid #404040;
                     outline: none;
+                    color: var(--MainTextColor);
                 }
 
                 button{
                     width: 100%;
-                    padding: 15px;
-                    font-size: 1.25rem;
+                    padding: 7.5px;
+                    font-size: 1rem;
+                    font-weight: 750;
+                    text-transform: uppercase;
                     border-radius: 10px;
                     border: none;
-                    background: $HTextColor;
-                    color: $ContrastTextColor;
+                    background: var(--HTextColor);
+                    color: var(--ContrastTextColor);
                     cursor: pointer;
 
                     @include mobile{
@@ -112,12 +122,12 @@
                     justify-content: center;
 
                     small{
-                        color: $MainTextColor;
+                        color: var(--MainTextColor);
                         text-align: center;
                         font-weight: 850;
                         font-size: 1rem;
                     }
-
+                    
                     @include mobile{
                         margin-top: 0;
                         padding: 0;
@@ -125,13 +135,13 @@
                 }
             }
         }
-
+        
         .address{
             display: flex;
-
+            
             .socials{
                 width: 100%;
-
+                
                 ul{
                     display: flex;
                     justify-content: space-between;
@@ -142,10 +152,10 @@
                     @include mobile{
                         padding: 0;
                     }
-
+                    
                     li{
                         a{
-                            color: $SecTextColor;
+                            color: var(--MainTextColor);
                             font-weight: 600;
                             font-size: 1.25rem;
                             display: flex;
@@ -154,7 +164,7 @@
                             transition: all ease .25s;
 
                             &:hover{
-                                color: $HTextColor;
+                                color: var(--HTextColor);
                                 transform: scale(1.25);
                             }
 

@@ -38,7 +38,7 @@
         border-radius: 10px;
         padding: 10px 20px;
         overflow-y: scroll;
-        background: $HTextColor;
+        background: var(--HTextColor);
 
         .text{
             background: rgba(255, 255, 255, .2);
@@ -47,7 +47,7 @@
             
             p{
                 text-align: left;
-                color: $SecTextColor;
+                color: var(--SecTextColor);
             }
         }
     }

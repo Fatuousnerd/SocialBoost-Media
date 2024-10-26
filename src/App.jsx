@@ -9,60 +9,52 @@ import Reviews from "./components/reviews/Reviews";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import useDeviceType from "./components/useDeviceType/useDeviceType";
-import Test from "./Test";
+import ThemeProvider from "./utils/ThemeContext";
 
 
 const App = () => {
 
   const { isMobile, isTablet, isDesktop } = useDeviceType();
 
-  return <div>
-    <ScrollUp/>
-    
-    {/* <section>
-      <Loader/>
-    </section> */}
+  return <>
+    <ThemeProvider>
 
-    <section>
-      <Navbar/>
-      <Hero/>
-    </section>
-    
-    <section>
-      <About/>
-    </section>
+      <ScrollUp />
 
-    {isDesktop && 
       <section>
-        <Services/>
+        <Navbar />
+        <Hero />
       </section>
-    }
 
-    {isMobile &&
-      <Services/>
-    }
-    
-    
-    <section>
-      <Reviews/>
-    </section>
-    
-    <section>
-      <Contact/>
-    </section>
-    
-    <section>
-      <Footer/>
-    </section>
+      <section >
+        <About />
+      </section>
 
-    {/* <section>
-      <Test/>
-    </section>
-    <section>
-      <Test/>
-    </section> */}
+      {isDesktop &&
+        <section>
+          <Services />
+        </section>
+      }
 
-  </div>;
+      {isMobile &&
+        <Services />
+      }
+
+
+      <section>
+        <Reviews />
+      </section>
+
+      <section>
+        <Contact />
+      </section>
+
+      <section>
+        <Footer />
+      </section>
+
+    </ThemeProvider>
+  </>
 };
 
 export default App;

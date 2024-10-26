@@ -17,9 +17,14 @@ html{
     // font-family: "Josefin Sans", sans-serif;
 }
 body{
-    background: $MainBgColor;
-    color: $MainTextColor;
+    background: var(--MainBgColor);
+    color: var(--MainTextColor);
     min-height: 100vh;
+    transition: all ease-in-out .5s;
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
 }
 a{
     color: inherit;
@@ -37,7 +42,7 @@ button{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 span{
-    color: $HTextColor;
+    color: var(--HTextColor);
 }
 @mixin mobile{
     @media (max-width:730px) {

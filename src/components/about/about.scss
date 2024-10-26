@@ -7,7 +7,7 @@
     height: calc(100vh - 70px);
     top: 70px;
     overflow: hidden;
-    padding: 20px;
+    padding: 10px;
     font-size: 1.25rem;
 
     @include mobile{
@@ -15,10 +15,10 @@
     }
 
     .up{
+        // background: red;
         max-height: 50%;
-        padding: 25px;
+        padding: 0 25px;
         display: flex;
-        gap: 70px;
         justify-content: space-between;
 
        
@@ -32,8 +32,10 @@
             
             .title{
                 font-size: 60px;
-                line-height: 8rem;
-                color: $HTextColor;
+                font-weight: 750;
+                line-height: 4rem;
+                text-transform: uppercase;
+                color: var(--HTextColor);
 
                 @include mobile{
                     font-size: 3rem;
@@ -45,7 +47,7 @@
                 line-height: 2rem;
 
                 span{
-                    color: $HTextColor;
+                    color: var(--HTextColor);
                 }
 
                 @include mobile{
@@ -65,16 +67,14 @@
             button{
                 border-radius: 50px;
                 border: none;
-                width: 150px;
-                height: 50px;
-                padding: 25px;
+                padding: 10px 20px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 text-align: center;
-                background: $HTextColor;
+                background: var(--HTextColor);
                 font-size: 1.25rem;
-                color: $ContrastTextColor;
+                color: var(--ContrastTextColor);
 
                 @include mobile{
                     height: 40px;
@@ -100,12 +100,12 @@
                 
                 .d1{
                     display: flex;
-                    padding-left: 500px;
+                    padding-left: 300px;
                     border-radius: 20px;
                     
                     img{
-                        width: 400px;
-                        height: 200px;
+                        width: 200px;
+                        height: 150px;
                         position: relative;
                         border-radius: 10px;
                         object-fit: cover;
@@ -115,13 +115,11 @@
                 .d2{
                     display: flex;
                     padding-right: 500px;
-                    padding-bottom: 20px;
                     border-radius: 20px;
-                    // background: red;
 
                     img{
                         width: 400px;
-                        height: 250px;
+                        height: 150px;
                         position: relative;
                         border-radius: 10px;
                         object-fit: contain;
@@ -135,18 +133,17 @@
     .down{
         display: flex;
         justify-content: space-between;
-        gap: 100px;
-        padding: 20px;
-        margin-top: 50px;
+        margin-top: 40px;
 
         @include mobile{
             margin-top: 10px;
+            padding: 10px;
             text-align: right;
         }
         
         .imageWrapper{
             border-radius: 10px;
-            height: 350px;
+            height: 200px;
             min-width: 500px;
             padding: 10px;
 
@@ -165,8 +162,7 @@
         .textWrapper{
 
             h1{
-                font-size: 36px;
-                color: $HTextColor;
+                color: var(--HTextColor);
 
                 @include mobile{
                     font-size: 2.5rem;
@@ -174,7 +170,6 @@
             }
             
             h4{
-                font-size: 50px;
 
                 @include mobile{
                     font-size: 1.25rem;
@@ -182,7 +177,7 @@
             }
             
             p{
-                margin: 20px 0;
+                margin: 10px 0;
 
                 @include mobile{
                     margin: 10px 0;
@@ -193,16 +188,14 @@
             button{
                 border-radius: 50px;
                 border: none;
-                width: 210px;
-                height: 50px;
-                padding: 25px;
+                padding: 5px 15px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 text-align: center;
-                background: $HTextColor;
+                background: var(--HTextColor);
                 font-size: 1.25rem;
-                color: $ContrastTextColor;
+                color: var(--ContrastTextColor);
                 
                 @include mobile{
                     height: 40px;

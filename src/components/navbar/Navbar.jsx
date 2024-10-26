@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./navbar.scss";
 import Subs from "./subs/Subs";
 import Sidebar from "../sidebar/Sidebar";
+import ThemeToggle from "../../utils/ThemeTogggle";
 
 const Navbar = () => {
     const [currentSection, setCurrentSection] = useState("home");
@@ -30,16 +31,22 @@ const Navbar = () => {
         };
     }, []);
 
-    return(
+    return (
         <div className="navbar">
-            <Sidebar/>
+            <Sidebar />
+            <div className="tgl" style={{position:"absolute", right:50}}>
+                <ThemeToggle />
+            </div>
             <a href="#home">
                 <div className="logo">
                     <img src="./favicon-removebg-preview.png" alt="LOGO" />
                 </div>
             </a>
-            <Subs/>
+
+            <Subs />
+
             <div className="links">
+
                 <div className="one">
                     <ul>
                         <li><a href="#home" className={currentSection === "home" ? "active" : ""}>Home</a></li>
@@ -49,12 +56,13 @@ const Navbar = () => {
                         <li><a href="#contact" className={currentSection === "contact" ? "active" : ""}>Contact Us</a></li>
                     </ul>
                 </div>
+
                 <div className="two">
                     <ul>
-                        <li><a target="_blank" href="https://form.jotform.com/242062498395566">Get Started!</a></li>
                         <li><a target="_blank" href="https://form.jotform.com/242062498395566" className="crt">Boost Your Brand!</a></li>
                     </ul>
                 </div>
+                <ThemeToggle />
             </div>
         </div>
     )

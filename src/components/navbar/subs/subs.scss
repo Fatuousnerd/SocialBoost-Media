@@ -5,10 +5,10 @@
     display: flex;
     flex-direction: row;
     padding: 5px;
-    width: 400px;
+    width: 335px;
     background: transparent;
     border-radius: 5px;
-    border: 1px solid #252525;
+    border: 1px solid var(--MainTextColor);
     gap: 10px;
     cursor: not-allowed;
     
@@ -19,13 +19,13 @@
     .search{
         display: flex;
         align-items: center;
-        color: $MainTextColor;
+        color: var(--MainTextColor);
         cursor: not-allowed;
     }
     
     form{
         display: flex;
-        width: 400px;
+        width: 300px;
         
         input{
             cursor: not-allowed;
@@ -38,13 +38,13 @@
         
         
         button{
-            background: $HTextColor;
+            background: var(--HTextColor);
             color: #fff;
             border-radius: 2.5px;
             border: none;
             box-shadow: none;
             text-align: center;
-            padding: 10px 30px;
+            padding: 10px;
             right: 0;
             cursor: not-allowed;
         }

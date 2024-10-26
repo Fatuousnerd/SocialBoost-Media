@@ -4,7 +4,7 @@ import { Instagram, Mail, Phone, X } from "@mui/icons-material";
 
 const variants = {
     initial:{
-        y:500,
+        y:10,
         opacity:0,
     },
     animate:{
@@ -58,7 +58,7 @@ const Contact = () => {
                         <motion.input type="text" placeholder="Name" name="name" variants={variants}/>
                         <motion.input type="email" placeholder="Mail Address" name="email" variants={variants}/>
                         <motion.input type="text" placeholder="Subject" name="subject" variants={variants}/>
-                        <motion.textarea placeholder="Message" name="message" variants={variants}></motion.textarea>
+                        <motion.textarea placeholder="Message" name="message" rows={4} variants={variants}></motion.textarea>
                         <motion.button type="submit" variants={variants}>Send</motion.button>
                     </motion.form>
                         <motion.div className="msg">
@@ -70,10 +70,10 @@ const Contact = () => {
                 <motion.div className="address">
                     <motion.div className="socials">
                         <ul>
-                            <li><a href="x.com/SBMediaz"><X/> </a></li>
-                            <li><a href="instagram.com/sociallboostmedia"><Instagram/> </a></li>
-                            <li><a href="mailto:socialboostmedia@protonmail.com"><Mail/> </a></li>
-                            <li><a href=""><Phone/> </a></li>
+                            <li><a target="_blank" href="https://x.com/SBMediaz"><X/> </a></li>
+                            <li><a target="_blank" href="https://instagram.com/sociallboostmedia"><Instagram/> </a></li>
+                            <li><a target="_blank" href="mailto:socialboostmedia@protonmail.com"><Mail/> </a></li>
+                            <li><a target="_blank" href="tel:+254745610061"><Phone/> </a></li>
                             {/* <li><a href="">Facebook</a></li> */}
                         </ul>
                     </motion.div>

@@ -1,7 +1,7 @@
 import "./footer.scss";
 import Popup from "./popup/Popup";
 import { motion } from "framer-motion";
-import { Copyright, Facebook, GitHub, Instagram, LinkedIn, X, Mail } from "@mui/icons-material";
+import { Copyright, Facebook, GitHub, Instagram, LinkedIn, X, Mail, Phone } from "@mui/icons-material";
 import { useState } from "react";
 
 const  columnVariants = {
@@ -30,14 +30,14 @@ const clms = [
     {
         id: 2,
         title: "Contact Us",
-        lnk: ["mailto:socialboostmedia@protonmail.com", "https://x.com/username"],
+        lnk: ["mailto:socialboostmedia@protonmail.com", "tel:+254745610061"],
         description: ["Mail", "Phone No."],
     },
     {
         id: 3,
         title: "Socials",
-        lnk: ["https://instagram.com/sociallboostmedia", "https://x.com/SBMediaz", "https://ke.linkedin.com/", "https://github.com/Fatuousnerd"],
-        description: ["Instagram", "Twitter/X", "LinkedIn", "Github"],
+        lnk: ["https://instagram.com/sociallboostmedia", "https://x.com/SBMediaz", "https://github.com/Fatuousnerd"],
+        description: ["Instagram", "Twitter/X", "Github"],
     },
     // {
     //     id: 4,
@@ -106,10 +106,10 @@ const Footer = () => {
                     
                     <div className="socials">
                         <a target="_blank" href="https://x.com/SBMediaz"><X/></a>
-                        <a target="_blank" href="https://ke.linkedin.com"><LinkedIn/></a>
                         <a target="_blank" href="https://instagram.com/sociallboostmedia"><Instagram/></a>
                         <a target="_blank" href="https://github.com/Fatuousnerd"><GitHub/></a>
                         <a target="_blank" href="mailto:socialboostmedia@protonmail.com"><Mail/></a>
+                        <a href="tel:+254745610061"><Phone/></a>
                     </div>
                 </div>
             </div>

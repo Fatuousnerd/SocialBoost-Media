@@ -1,89 +1,98 @@
 @import "../../app.scss";
 
-.navbar{
+.navbar {
     width: 100vw;
     height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 100px 30px 40px;
+    padding: 0 30px;
     font-size: larger;
     position: fixed;
     background: rgba(255, 255, 255, .1);
     backdrop-filter: blur(10px);
 
-    @include mobile{
+    @include mobile {
         z-index: 999;
     }
 
-    .logo{
+    .tgl {
+        display: none;
+        
+        @include mobile {
+            display: block;
+        }
+    }
+
+    .logo {
         margin-top: 5px;
         height: 80px;
         cursor: pointer;
 
-        @include mobile{
+        @include mobile {
             display: none;
         }
 
-        img{
+        img {
             width: 100%;
             height: 100%;
             object-fit: contain;
             z-index: 999;
             transition: all ease-out .1s;
-            
-            &:hover{
-                // background: $HTextColor;
+
+            &:hover {
+                // background: var(--HTextColor);
                 transform: scale(1.05);
             }
         }
     }
 
-    .links{
+    .links {
         display: flex;
-        gap: 80px;
+        gap: 30px;
 
-        @include mobile{
+        @include mobile {
             display: none;
         }
 
-        .one{
+        .one {
 
-            ul{
+            ul {
                 gap: 30px;
                 display: flex;
 
-                li{
+                li {
 
-                    .active{
-                        color: $HTextColor;
+                    .active {
+                        color: var(--HTextColor);
                         transition: all ease-out .5s;
                     }
-                    
-                    &:hover{
-                        color: $HTextColor;
+
+                    &:hover {
+                        color: var(--HTextColor);
                     }
                 }
             }
         }
-        .two{
 
-            ul{
-                gap: 30px;
+        .two {
+
+            ul {
+                gap: 10px;
                 display: flex;
 
-                li{
-                    
-                    &:hover{
-                        color: $HTextColor;
+                li {
+
+                    &:hover {
+                        color: var(--HTextColor);
                     }
-                    
-                    .crt{
-                        background: $HTextColor;
+
+                    .crt {
+                        background: var(--HTextColor);
                         color: #fff;
                         border-radius: 5px;
                         text-align: center;
-                        padding: 10px 30px;
+                        padding: 10px;
                     }
                 }
             }
