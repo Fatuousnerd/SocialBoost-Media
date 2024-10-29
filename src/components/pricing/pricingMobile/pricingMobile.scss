@@ -1,0 +1,87 @@
+@import "../../../app.scss";
+@import "../../../global.scss";
+
+.pricingMobile {
+    position: relative;
+    top: 70px;
+
+    .progress {
+        position: sticky;
+        top: 0;
+        left: 0;
+        padding-top: 50px;
+        text-align: center;
+        color: var(--HTextColor);
+        font-size: 36px;
+
+        @include mobile {
+            padding-top: calc(100vh - 100px);
+            font-size: 20px;
+        }
+
+        .progressBar {
+            height: 10px;
+            background: var(--HTextColor);
+            border-radius: 5px;
+        }
+    }
+
+    section {
+        position: relative;
+
+        .content {
+            position: relative;
+            width: 100%;
+            height: calc(100% - 300px);
+            top: 200px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            color: var(--MainTextColor);
+            justify-content: space-between;
+
+            h1 {
+                font-weight: 760;
+                font-size: 1.75rem;
+                text-align: left;
+                text-transform: uppercase;
+            }
+
+            .desc {
+                text-align: center;
+                font-size: 1.2rem;
+                font-weight: 450;
+                color: gray;
+                display: none;
+            }
+            
+            .bn {
+                // color: gray;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+
+                .txt {
+                    padding: 0 20px;
+                    font-size: 1.2rem;
+                    font-weight: 450;
+                    text-transform: capitalize;
+                }
+
+                .cta {
+                    font-size: initial;
+                    text-align: center;
+                }
+            }
+
+            .price {
+                font-weight: 760;
+                font-size: 2rem;
+                text-align: center;
+                background: var(--HTextColor);
+                color: var(--MainTextColor);
+            }
+        }
+    }
+}

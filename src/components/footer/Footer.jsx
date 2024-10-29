@@ -36,8 +36,8 @@ const clms = [
     {
         id: 3,
         title: "Socials",
-        lnk: ["https://instagram.com/sociallboostmedia", "https://x.com/SBMediaz", "https://github.com/Fatuousnerd"],
-        description: ["Instagram", "Twitter/X", "Github"],
+        lnk: ["https://instagram.com/sociallboostmedia", "https://x.com/SBMediaz"],
+        description: ["Instagram", "X/Twitter"],
     },
     // {
     //     id: 4,
@@ -107,7 +107,7 @@ const Footer = () => {
                     <div className="socials">
                         <a target="_blank" href="https://x.com/SBMediaz"><X/></a>
                         <a target="_blank" href="https://instagram.com/sociallboostmedia"><Instagram/></a>
-                        <a target="_blank" href="https://github.com/Fatuousnerd"><GitHub/></a>
+                        {/* <a target="_blank" href="https://github.com/Fatuousnerd"><GitHub/></a> */}
                         <a target="_blank" href="mailto:socialboostmedia@protonmail.com"><Mail/></a>
                         <a href="tel:+254745610061"><Phone/></a>
                     </div>

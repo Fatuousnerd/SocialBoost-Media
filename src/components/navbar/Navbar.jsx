@@ -52,6 +52,7 @@ const Navbar = () => {
                         <li><a href="#home" className={currentSection === "home" ? "active" : ""}>Home</a></li>
                         <li><a href="#about" className={currentSection === "about" ? "active" : ""}>About Us</a></li>
                         <li><a href="#services" className={currentSection === "services" ? "active" : ""}>Services</a></li>
+                        <li><a href="#pricing" className={currentSection === "pricing" ? "active" : ""}>Pricing</a></li>
                         <li><a href="#reviews" className={currentSection === "reviews" ? "active" : ""}>Reviews</a></li>
                         <li><a href="#contact" className={currentSection === "contact" ? "active" : ""}>Contact Us</a></li>
                     </ul>

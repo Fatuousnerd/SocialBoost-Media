@@ -49,7 +49,7 @@
 
     .links {
         display: flex;
-        gap: 30px;
+        gap: 20px;
 
         @include mobile {
             display: none;
@@ -58,7 +58,7 @@
         .one {
 
             ul {
-                gap: 30px;
+                gap: 20px;
                 display: flex;
 
                 li {

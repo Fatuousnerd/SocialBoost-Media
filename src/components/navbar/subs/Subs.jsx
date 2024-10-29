@@ -10,7 +10,7 @@ const Subs = () => {
             <ForwardToInbox />
         </div>
         <form action="">
-            <input type="text" placeholder="Subscribe to Our Newsletter" disabled/>
+            <input type="text" placeholder="Subscribe Now" disabled/>
             <button type="submit" disabled>SUBSCRIBE</button>
         </form>
     </div>

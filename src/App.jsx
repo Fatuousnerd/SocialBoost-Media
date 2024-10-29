@@ -5,6 +5,7 @@ import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
 import About from "./components/about/About";
 import Services from "./components/services/Services";
+import Pricing from "./components/pricing/Pricing";
 import Reviews from "./components/reviews/Reviews";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
@@ -40,6 +41,16 @@ const App = () => {
         <Services />
       }
 
+
+      {isDesktop &&
+        <section>
+          <Pricing />
+        </section>
+      }
+      
+      {isMobile &&
+          <Pricing />
+      }
 
       <section>
         <Reviews />

@@ -1,0 +1,75 @@
+@import '../../app.scss';
+@import '../../global.scss';
+
+.pricing {
+    max-width: 100vw;
+    height: calc(100vh - 70px);
+    top: 70px;
+    position: relative;
+    padding: 20px;
+    display: flex;
+    gap: 50px;
+
+    a {
+        width: 100%;
+        height: 100%;
+        transition: all ease-in-out .25s;
+
+        .content {
+            background: var(--SecTextColor);
+            color: var(--HTextColor);
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            h1 {
+                font-weight: 760;
+                font-size: 1.75rem;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            .desc {
+                text-align: center;
+                font-size: 1.2rem;
+                font-weight: 450;
+            }
+
+            .bn {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+
+                .txt {
+                    padding: 0 50px;
+                    font-size: 1.2rem;
+                    font-weight: 450;
+                    text-transform: capitalize;
+                }
+
+                .cta {
+                    font-size: initial;
+                    text-align: center;
+                }
+            }
+
+            .price {
+                font-weight: 760;
+                font-size: 2rem;
+                text-align: center;
+                background: var(--HTextColor);
+                color: var(--MainTextColor);
+            }
+        }
+
+        &:hover {
+            transform: scale(1.05);
+            box-shadow: var(--HTextColor) 0px 8px 24px;
+            transition: all ease-in-out .25s;
+        }
+    }
+}
