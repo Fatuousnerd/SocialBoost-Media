@@ -4,6 +4,8 @@ import "../pricing.scss";
 import { useRef } from "react";
 import { AdsClick, Code, MarkEmailRead } from "@mui/icons-material";
 import { Data } from "../Data";
+import {useSharedState} from "../../order/SharedContext"
+import ExtForm from "../../order/ExtForm"
 
 const cardVariants = {
     initial: {
@@ -40,7 +42,7 @@ const textVariants = {
 const Single = ({ item }) => {
 
     const ref = useRef()
-
+    const { sharedState, setSharedState } = useSharedState();
     const { scrollYProgress } = useScroll({
         target: ref,
         //offset:["start start", "end start"]
@@ -48,9 +50,15 @@ const Single = ({ item }) => {
 
     const y = useTransform(scrollYProgress, [0, 1], [-600, 600])
     // style={{ y }}
+    
+    const handleOpen = () => {
+        setSharedState(true)
+    };
+
     return (
         <section>
-            <a href={item.link}>
+            {sharedState && <ExtForm/>}
+            <a onClick={handleOpen}>
                 <motion.div className="content">
                     <h1>{item.name}</h1>
                     <p className='desc'>{item.desc}</p>
